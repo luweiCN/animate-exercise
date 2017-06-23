@@ -1,0 +1,128 @@
+html{
+    background: #666;
+}
+
+#mainBody{
+    margin: 150px auto;
+    width: 750px;
+    height: 600px;
+}
+
+#mainBody h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#bg{
+    width: 750px;
+    height: 466px;
+    position: relative;
+    overflow: hidden;
+    background: url("../img/bg2.png") no-repeat;
+}
+
+#mainCon{
+    position: absolute;
+    top: 25px;
+    left: 60px;
+
+}
+
+#mainCon figcaption{
+    /*position: relative;*/
+    /*width: 310px;*/
+    /*height: 340px;*/
+    /*left: 320px;*/
+    /*top: 40px;*/
+    /*z-index: 0;*/
+}
+
+#mainCon ul{
+    position: absolute;
+    left: 0px;  /* -334*4 -334*3 -334*2 -334px 0*/
+    height: 390px;
+    width: 1991px;
+    z-index: 1;
+}
+
+#mainCon ul li{
+    width: 294px;
+    height: 390px;
+    float: left;
+    position: relative;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+#mainCon ul li.main{
+    width: 615px;
+}
+
+
+#mainCon ul li .issue{
+    width: 294px;
+    height: 390px;
+}
+
+.text{
+    position: relative;
+    width: 310px;
+    height: 340px;
+    left: 380px;
+    top: 40px;
+    z-index: 0;
+}
+figcaption{
+    width: 750px;
+    height: 466px;
+    background: url("../img/bg1.png") no-repeat;
+    position: absolute;
+    top: -25px;
+    left: -60px;
+/*url("/img/bg1.png") no-repeat*/
+}
+
+.text p{
+    font-family: '微软雅黑 Light';
+    font-size: 24px;
+    color: white;
+    width: 310px;
+    text-indent: 24px;
+    margin-top: 50px;
+}
+
+.text .btn{
+    position: absolute;
+    top: 275px;
+    width: 160px;
+    height: 50px
+}
+
+aside{
+    width: 750px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+aside ul{
+    width: 140px;
+    height: 16px;
+    margin: 17px auto;
+}
+
+aside ul li{
+    list-style: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    float: left;
+    background: white;
+    margin: auto 6px;
+}
+
+aside ul li.active{
+    background: #ffa800;
+}
