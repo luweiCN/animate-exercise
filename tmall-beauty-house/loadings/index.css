@@ -1,0 +1,86 @@
+body{
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.loading-name{
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.main{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.loading-container{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.loading-box {
+  width: 50px;
+  height: 50px;
+}
+
+/* qq音乐loading */
+.qq-music{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.qq-music .item{
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background: #6FC18C;
+  margin: 1px;
+}
+
+.qq-music .item-3{
+  transform: translate3d(0, 6px, 0);
+  animation-name: qq-music-3;
+  animation-duration: 5s;
+}
+
+.qq-music .item-2, .qq-music .item-4{
+  transform: translate3d(0, 3px, 0);
+  animation-name: qq-music-2;
+  animation-duration: 5s;
+}
+
+.qq-music .item-1, .qq-music .item-5{
+  transform: translate3d(0, 0, 0);
+  animation-name: qq-music-1;
+  animation-duration: 1s;
+}
+
+@keyframes qq-music-1
+{
+    0%   {transform: translate3d(0, 0, 0);}
+    25%  {transform: translate3d(0, -3px, 0);}
+    50%  {transform: translate3d(0, 0, 0);}
+    75%  {transform: translate3d(0, 3px, 0);}
+    100%  {transform: translate3d(0, 0, 0);}
+    100%  {
+      transform: translate3d(0, 0, 0);
+      height: 15px;
+    }
+}
+/* qq音乐loading end */
